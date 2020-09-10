@@ -1,0 +1,33 @@
+.draft-list {
+  padding: 12px;
+  flex: 1;
+  
+  &__table-header {
+    padding: 0 12px;
+    display: flex;
+
+    > * {
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 24px;
+  }
+
+  &__stats {
+    display: flex;
+  }
+
+  &__stat {
+    flex: 1;
+  }
+}

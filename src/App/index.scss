@@ -1,0 +1,10 @@
+.app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &__footer {
+    position: static;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,41 @@
+.player-list {
+  padding: 12px;
+  flex: 1;
+
+  &__table-header {
+    padding: 0 12px;
+    display: flex;
+    :first-child{
+      flex: 1;
+    }
+    :last-child{
+      flex: 6;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    padding: 12px;
+    margin-bottom: 24px;
+  }
+
+  &__player-name {
+    flex: 1;
+  }
+
+  &__team {
+    flex: 6;
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  &__pokemon {
+    flex: 1;
+  }
+}
