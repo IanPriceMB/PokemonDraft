@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
-import { Switch, Route, Redirect, useHistory } from 'react-router-dom';
-import { Draft } from '..';
+import { Switch, Route, useHistory } from 'react-router-dom';
+import { Draft, TeamBuilder } from '..';
 import { Player, AI } from '../../classes';
 
 const Game = () => {
@@ -41,9 +41,11 @@ const Game = () => {
     <div className="game" data-testid="Game">
       <Switch>
         <Route path="/game/draft" >
-          <Draft user={user} players={players}/>
+          <Draft user={user} players={players} />
         </Route>
-        <Route path="/game/team" component={Team} />
+        <Route path="/game/team">
+          <TeamBuilder user={user} players={players} />
+        </Route>
         {/* <Route path="/game/battle" component={Battle} /> */}
       </Switch>
     </div>

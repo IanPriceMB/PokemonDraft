@@ -1,8 +1,11 @@
-.draft {
-  display: flex;
+.team-builder {
+  display: flex wrap;
   width: 90%;
   margin: 0 auto;
 
+  &__moniter {
+    display: flex;
+  }
   .player-list {
     flex: 1;
   }
